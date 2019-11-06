@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>01.javascript的typeof返回那些数据类型</title>
+</head>
+
+<body>
+    <script>
+        /* 01.javascript的typeof返回那些数据类型? */
+        var bool = true;
+        console.log(typeof 1, typeof "hello world", typeof aaa, typeof bool, typeof isNaN, typeof window);
+        //number string undefined boolean function object
+
+        /* 检测数组的几种方式？*/
+        var array = [1, 2, 3];
+        
+        console.log(Array.isArray(array));//true
+        console.log(toString.call(array));//[object Array]
+        console.log(array.constructor);//ƒ Array() { [native code] } 不严谨：可读可写
+        console.log(array instanceof Array);//true
+
+    </script>
+</body>
+
+</html>
